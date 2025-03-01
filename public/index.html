@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrador - Sistema de Pedidos</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script defer src="../assets/js/main.js"></script>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">FUDO</div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Mostrador</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Mesas</a></li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <span>Administrador</span>
+            <a href="../Usuarios/logout.php">Cerrar sesión</a>
+        </div>
+    </header>
+
+    <main class="content">
+        <h1>Mostrador</h1>
+        <button class="btn btn-primary">+ Nuevo Pedido</button>
+        
+        <section class="order-section">
+            <h2>Pendiente</h2>
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Hora Inicio</th>
+                        <th>Estado</th>
+                        <th>Cliente</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="5">Sin ventas pendientes.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="order-section">
+            <h2>En Curso</h2>
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Hora Inicio</th>
+                        <th>Estado</th>
+                        <th>Cliente</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>18424</td>
+                        <td>01/03/25 00:48:40</td>
+                        <td><span class="badge in-progress">En curso</span></td>
+                        <td>Nacho Zalazar</td>
+                        <td>$27.000,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
